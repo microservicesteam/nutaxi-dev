@@ -18,19 +18,21 @@ Tools, IDE and other tools' configurations, guidelines, best practices for nutax
 
 ## Project structure
 
+* TBD
+
 ## Code formatting
 
-TBD
+* TBD
 
 
 ## Coding guidelines
 
-TBD
+* TBD
 
 ## Spring best practices
 
-TBD
+* TBD
 
 ## Gradle best practices
 
-TBD
+* TBD

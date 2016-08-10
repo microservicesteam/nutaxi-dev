@@ -22,7 +22,7 @@ Tools, IDE and other tools' configurations, guidelines, best practices for nutax
 
 ## Code formatting
 
-* TBD
+For `Java` based project use the following formatting [profile](config/formatting/nutaxi-formatting-profile.xml)
 
 
 ## Coding guidelines

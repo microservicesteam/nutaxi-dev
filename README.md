@@ -18,7 +18,12 @@ Tools, IDE and other tools' configurations, guidelines, best practices for nutax
 
 ### [Checkstyle](http://checkstyle.sourceforge.net/)
 ### [PMD](https://pmd.github.io/)
+
+* [Setup](pmd/setup.md) PMD for the given project
+
 ### [FindBugs](http://findbugs.sourceforge.net/)
+
+* [Setup](findbugs/setup.md) FindBugs for the given project
 
 ## Project structure
 

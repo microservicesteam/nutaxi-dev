@@ -8,6 +8,10 @@ Tools, IDE and other tools' configurations, guidelines, best practices for nutax
 * [Setup](travis/setup.md) Travis CI for the given project
 
 ### [Codecov](https://codecov.io/)
+
+
+* [Setup](codecov/setup.md) Codecov for the given project
+
 ### [VersionEye](https://www.versioneye.com/)
 
 ## Code quality

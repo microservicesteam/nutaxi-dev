@@ -30,5 +30,5 @@ check.dependsOn jacocoTestReport
 * Go to https://codecov.io/
 * Select *microservices* organization
 * Select the given project
-* Add the badge to your `README.md` file
-** Copy the badge's URL from the Settings tab of the given project
+* Add the given project's badge to project's `README.md` file
+  * Copy the badge's URL from the Settings tab of the given project

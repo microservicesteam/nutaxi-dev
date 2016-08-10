@@ -15,5 +15,5 @@ script:
 * Add new repository
 * Select *microservices* organization
 * Enable the given project
-* Add the badge to your `README.md` file
-** Copy the badge's URL from the actual build
+* Add the given project's badge to project's `README.md` file
+  * Copy the badge's URL from the actual build

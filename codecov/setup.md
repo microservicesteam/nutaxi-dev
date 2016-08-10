@@ -1,14 +1,14 @@
 
 # Setup of Codecov
 
-* Update the given project's  `.travis.yml`
+* Update the given project's  `.travis.yml` file
 
 ```yml
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 ```
 
-* Update the given project's  `build.gradle`
+* Update the given project's  `build.gradle` file
 
 ```groovy
 apply plugin: 'jacoco'

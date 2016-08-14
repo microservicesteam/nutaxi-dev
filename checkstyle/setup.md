@@ -7,6 +7,8 @@
 
 ```groovy
 classpath("de.undercouch:gradle-download-task:3.1.1")
+classpath 'org.apache.httpcomponents:httpclient:4.5.2'	// optional       
+
 ```
 
 

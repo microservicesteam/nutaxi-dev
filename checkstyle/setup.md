@@ -12,6 +12,7 @@ classpath("de.undercouch:gradle-download-task:3.1.1")
 
 ```groovy
 apply plugin: 'de.undercouch.download'
+apply plugin: 'checkstyle'
 
 task checkstyleConfigDownload(type: de.undercouch.gradle.tasks.download.Download) {
     src 'https://raw.githubusercontent.com/microservicesteam/nutaxi-dev/master/config/checkstyle/checkstyle.xml'

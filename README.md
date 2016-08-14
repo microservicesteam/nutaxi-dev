@@ -17,6 +17,9 @@ Tools, IDE and other tools' configurations, guidelines, best practices for nutax
 ## Code quality
 
 ### [Checkstyle](http://checkstyle.sourceforge.net/)
+
+* [Setup](checkstyle/setup.md) Checkstyle for the given project
+
 ### [PMD](https://pmd.github.io/)
 
 * [Setup](pmd/setup.md) PMD for the given project

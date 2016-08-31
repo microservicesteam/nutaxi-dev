@@ -53,6 +53,7 @@ For `Java` based projects use the following [formatting profile](config/formatti
 
 * Use the following [.gitignore](git/.gitignore) file
 * Link the new project as [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) to our [base project](https://github.com/microservicesteam/nutaxi)
+  * Refresh your repository: *git submodule update --init --recursive*
   * Use the following command: *git submodule add `URL`*
 * Update the [base project](https://github.com/microservicesteam/nutaxi) manually
   * Use the following command: *git submodule update --remote*

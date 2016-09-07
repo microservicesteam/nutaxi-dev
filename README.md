@@ -52,6 +52,11 @@ For `Java` based projects use the following [formatting profile](config/formatti
 ## Git Best practices
 
 * Use the following [.gitignore](git/.gitignore) file
+* Working with [nutaxi-project](https://github.com/microservicesteam/nutaxi)
+  1. Nutaxi comes with submodules
+  2. By default you can work (commit/push/pull) with nutaxi repository only
+  3. Submodules represent a snapshot view only on the sub repositories (HEAD is detached)
+  4. In order to work with submodules you need to checkout master in the appropriate submodule folder -> Head will be attached again
 * Link the new project as [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) to our [base project](https://github.com/microservicesteam/nutaxi)
   * Refresh your repository: *git submodule update --init --recursive*
   * Use the following command: *git submodule add `URL`*

@@ -1,31 +1,29 @@
 
 # Setup of checkstyle
 
-* Update the given project's  `build.gradle` file
+* Update the given project's `pom.xml` file with the following plugin
 
-	* Add the following dependency and lines
+```xml
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-checkstyle-plugin</artifactId>
+    <version>${maven-checkstyle-plugin.version}</version>
+    <executions>
+        <execution>
+            <id>validate</id>
+            <phase>validate</phase>
+            <configuration>
+                <configLocation>https://raw.githubusercontent.com/microservicesteam/nutaxi-dev/master/config/checkstyle/checkstyle.xml</configLocation>
+                <encoding>UTF-8</encoding>
+                <consoleOutput>true</consoleOutput>
+                <failsOnError>true</failsOnError>
+                <linkXRef>false</linkXRef>
+            </configuration>
+            <goals>
+                <goal>check</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
 
-```groovy
-classpath("de.undercouch:gradle-download-task:3.1.1")
-classpath 'org.apache.httpcomponents:httpclient:4.5.2'	// optional       
-
-```
-
-
-```groovy
-apply plugin: 'de.undercouch.download'
-apply plugin: 'checkstyle'
-
-task checkstyleConfigDownload(type: de.undercouch.gradle.tasks.download.Download) {
-    src 'https://raw.githubusercontent.com/microservicesteam/nutaxi-dev/master/config/checkstyle/checkstyle.xml'
-    dest buildDir
-}
-
-checkstyle {
-    toolVersion = "7.1"
-    configFile = new File(buildDir, "checkstyle.xml")
-}
-
-checkstyleMain.dependsOn checkstyleConfigDownload
-checkstyleTest.dependsOn checkstyleConfigDownload
 ```

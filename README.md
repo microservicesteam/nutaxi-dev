@@ -45,9 +45,10 @@ For `Java` based projects use the following [formatting profile](config/formatti
 
 * TBD
 
-## Gradle best practices
+## Maven best practices
 
-* TBD
+* Extract every dependency version into properties with the following property name: <artifactId.version>
+
 
 ## Git Best practices
 

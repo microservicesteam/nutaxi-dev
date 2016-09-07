@@ -8,23 +8,40 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
 ```
 
-* Update the given project's  `build.gradle` file
+* Update the given project's  `pom.xml` file with the following plugin
 
-```groovy
-apply plugin: 'jacoco'
-
-jacoco {
-    toolVersion = "0.7.7.201606060606"
-}
-
-jacocoTestReport {
-    reports {
-        xml.enabled = true
-        html.enabled = true
-    }
-}
-
-check.dependsOn jacocoTestReport
+```xml
+ <plugin>
+    <groupId>org.jacoco</groupId>
+    <artifactId>jacoco-maven-plugin</artifactId>
+    <version>${jacoco-maven-plugin}</version>
+    <executions>
+        <execution>
+            <id>default-prepare-agent</id>
+            <goals>
+                <goal>prepare-agent</goal>
+            </goals>
+        </execution>
+        <execution>
+            <id>default-prepare-agent-integration</id>
+            <goals>
+                <goal>prepare-agent-integration</goal>
+            </goals>
+        </execution>
+        <execution>
+            <id>default-report</id>
+            <goals>
+                <goal>report</goal>
+            </goals>
+        </execution>
+        <execution>
+            <id>default-report-integration</id>
+            <goals>
+                <goal>report-integration</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
 ```
 
 * Go to https://codecov.io/

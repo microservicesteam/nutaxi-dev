@@ -11,9 +11,8 @@
 <module name="Checker">
   <property name="severity" value="error"/>
   <property name="charset" value="UTF-8"/>
+  <module name="SuppressWarningsFilter"/>  
   <module name="TreeWalker">
-    <module name="SuppressWarningsHolder"/>
-    <module name="SuppressWarningsFilter"/>
     <module name="AvoidStarImport"/>
     <module name="RedundantImport"/>
     <module name="UnusedImports"/>
@@ -60,5 +59,6 @@
       <property name="separated" value="true"/>
       <property name="sortStaticImportsAlphabetically" value="true"/>
     </module>
+    <module name="SuppressWarningsHolder"/>
   </module>
 </module>

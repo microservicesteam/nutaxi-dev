@@ -50,11 +50,32 @@ For `Java` based projects use the following [formatting profile](config/formatti
 * Extract every dependency version into properties with the following property name: <artifactId.version>
 
 
-## Git Best practices
+## Git
 
 * Use the following [.gitignore](git/.gitignore) file
 
-#### Workflow
+#### Guide for using Github
+
+* `master` is always a protected branch
+* no direct commits are allowed to master
+* every change should go through a pull request
+* accepted pull request always squashed and merged(use the button on the UI)
+ * `git fetch`
+ * `git rebase -i origin/master`
+ * change the `pick`s to `squash`s from the second commit from the top(the first one is the base commit)
+ * the final commit message is the name of the pull request
+ 	* [MS-{Taiga ticket number}] {Commit message}
+
+##### Acceptance criteria of an approved Pull Request
+
+* at least one approved code review by the team
+* green CI builds
+* optional: codacy, codecov, other reviews from team members
+
+##### Code review process
+* use the start review feature instead of single comments
+
+#### Submodule workflow
 
 * Working with [nutaxi-project](https://github.com/microservicesteam/nutaxi)
   1. Nutaxi comes with submodules

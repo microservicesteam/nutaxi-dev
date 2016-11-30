@@ -16,7 +16,6 @@
     <module name="AvoidStarImport"/>
     <module name="RedundantImport"/>
     <module name="UnusedImports"/>
-    <module name="HideUtilityClassConstructor"/>
     <module name="FinalClass"/>
     <module name="ArrayTypeStyle"/>
     <module name="InnerAssignment"/>
